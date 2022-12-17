@@ -11,7 +11,7 @@ twitter-to-kafka-service:
   mock-sleep-ms: 10000
 
 retry-config:
-  initial-interval-ms: 30000
+  initial-interval-ms: 0000
   max-interval-ms: 10000
   multiplier: 2.0
   maxAttempts: 3
@@ -41,11 +41,13 @@ kafka-producer-config:
 spring:
   application:
     name: twitter-to-kafka-service
-  profile:
+  profiles:
     active: twitter_to_kafka
-  config:
-    import: 'configserver:'
+#  config:
+#    import: 'configserver:'
   cloud:
     config:
       name: twitter-to-kafka-service,config-client
+      username: spring_cloud_user
+      password: springCloud_Pwd!
       uri: http://localhost:8888

@@ -13,6 +13,13 @@ spring:
     config:
       server:
         git:
-          uri: file://Users/simon/Documents/learn/java/spring-microservice/19microservices-demo/config-server-repository
+          uri: https://github.com/simonqiang/spring-cloud-config-server-repository.git
+          default-label: main
+          username: simonqiang
+          password: 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
           clone-on-start: true
     fail-fast: true
+  security:
+    user:
+      name: spring_cloud_user
+      password: springCloud_Pwd!
