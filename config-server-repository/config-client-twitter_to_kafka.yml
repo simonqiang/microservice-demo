@@ -5,7 +5,7 @@ twitter-to-kafka-service:
     - Kafka
     - Elasticsearch
   welcome-message: Hello microservices!
-  enable-mock-tweets: true
+  enable-mock-tweets: false
   mock-min-tweet-length: 5
   mock-max-tweet-length: 15
   mock-sleep-ms: 10000
@@ -18,7 +18,7 @@ retry-config:
   sleep-time-ms: 2000
 
 kafka-config:
-  bootstrap-servers: localhost:19092,localhost:29092,localhost:39092
+  bootstrap-servers: localhost:19092, localhost:29092, localhost:39092
   schema-registry-url-key: schema.registry.url
   schema-registry-url: http://localhost:8081
   topic-name: twitter-topic
