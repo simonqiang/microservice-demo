@@ -16,10 +16,12 @@ spring:
           uri: https://github.com/simonqiang/spring-cloud-config-server-repository.git
           default-label: main
           username: simonqiang
-          password: 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
+          password: '{cipher}244e054d8ed4d13c0f34c35338872a5a0813271013a1cafd0195b104e0f621f1bd212a80e36a1797d4389851d7d8408150e6888f19462dd8119c214a3f6410c0'
           clone-on-start: true
     fail-fast: true
   security:
     user:
       name: spring_cloud_user
-      password: springCloud_Pwd!
+      password: '{cipher}c11f5a9622fa4793144a574045e86486ee7369a389fb0ac029b3f9f8b748d2c1ad52f77c81040cfafc3a2a2bf6c3801e'
+encrypt:
+  key: 'Demo_Pwd!2022'
