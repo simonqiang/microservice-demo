@@ -9,20 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>elastic</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>elastic-config</module>
-        <module>elastic-model</module>
-        <module>elastic-index-client</module>
-        <module>elastic-query-client</module>
-    </modules>
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.data</groupId>
-            <artifactId>spring-data-elasticsearch</artifactId>
-        </dependency>
-    </dependencies>
+    <artifactId>common-util</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
