@@ -4,7 +4,6 @@ import com.microservices.demo.elastic.query.service.model.ElasticQueryServiceReq
 import com.microservices.demo.elastic.query.service.model.ElasticQueryServiceResponseModel;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
